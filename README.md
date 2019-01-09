@@ -3,22 +3,21 @@ About convertdate
 
 [![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
 
-Home: https://github.com/scrapinghub/convertdate
+Home: https://github.com/fitnr/convertdate
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: Converts between Gregorian dates and other calendar systems.
+Summary: Converts between Gregorian dates and other calendar systems
 
 
 
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/convertdate-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/convertdate-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/convertdate-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/convertdate-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/convertdate-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/convertdate-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/convertdate-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/convertdate-feedstock)
 
 Current release info
 ====================

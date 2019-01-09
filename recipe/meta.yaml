@@ -5,14 +5,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: convertdate-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/convertdate/convertdate-{{ version }}.tar.gz
   sha256: c3ca5ba66b31e29d2732bdb361422ed804d3b22c115659d05a43d1fc527b9773
   patches:
     - win_charmap.patch  # [win and py>27]
 
 build:
-  number: 0
+  number: 1000
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:

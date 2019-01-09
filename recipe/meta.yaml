@@ -1,28 +1,26 @@
-{% set version = "2.1.0" %}
+{% set version = "2.1.3" %}
 
 package:
   name: convertdate
   version: {{ version }}
 
 source:
-  fn: convertdate-{{ version }}.tar.gz
-  url: https://github.com/fitnr/convertdate/archive/v{{ version }}.tar.gz
-  sha256: 6e10a6d0484837a8383d72b7f39e3b3f4c43c0be1a047c858cba6467ddf135ce
-  patches:
-    - win_charmap.patch  # [win and py>27]
+  url: https://pypi.io/packages/source/c/convertdate/convertdate-{{ version }}.tar.gz
+  sha256: c3ca5ba66b31e29d2732bdb361422ed804d3b22c115659d05a43d1fc527b9773
 
 build:
   number: 1000
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
-    - ephem
-    - pytz
+    - ephem >=3.7.5.3,<3.8
+    - pytz >=2014.10,<2020
 
 test:
   imports:
@@ -30,10 +28,10 @@ test:
     - convertdate.data
 
 about:
-  home: https://github.com/scrapinghub/convertdate
+  home: https://github.com/fitnr/convertdate
   license: MIT
   license_file: LICENSE
-  summary: 'Converts between Gregorian dates and other calendar systems.'
+  summary: 'Converts between Gregorian dates and other calendar systems'
 
 extra:
   recipe-maintainers:

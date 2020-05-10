@@ -1,4 +1,4 @@
-{% set version = "2.1.3" %}
+{% set version = "2.2.1" %}
 
 package:
   name: convertdate
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/convertdate/convertdate-{{ version }}.tar.gz
-  sha256: c3ca5ba66b31e29d2732bdb361422ed804d3b22c115659d05a43d1fc527b9773
+  sha256: 6ce4747423fe2dde55bbdf89f0c3dc68044176d16d5f6a2cfbfe6c68b99db405
 
 build:
-  number: 1000
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   home: https://github.com/fitnr/convertdate
   license: MIT
   license_file: LICENSE
-  summary: 'Converts between Gregorian dates and other calendar systems'
+  summary: Converts between Gregorian dates and other calendar systems
 
 extra:
   recipe-maintainers:

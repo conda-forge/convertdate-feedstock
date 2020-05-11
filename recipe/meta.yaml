@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -19,19 +19,24 @@ requirements:
     - pip
   run:
     - python
-    - ephem >=3.7.5.3,<3.8
-    - pytz >=2014.10,<2020
+    - pymeeus <=1,>=0.3.6
+    - pytz >=2014.10
+
 
 test:
   imports:
     - convertdate
     - convertdate.data
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/fitnr/convertdate
   license: MIT
   license_file: LICENSE
-  summary: Converts between Gregorian dates and other calendar systems
+  summary: "Converts between Gregorian dates and other calendar systems.Calendars included: Baha'i, French Republican, Hebrew, Indian Civil, Islamic, ISO, Julian, Mayan and Persian."
 
 extra:
   recipe-maintainers:

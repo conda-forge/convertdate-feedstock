@@ -5,9 +5,9 @@ Home: https://github.com/fitnr/convertdate
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
-Summary: Converts between Gregorian dates and other calendar systems
+Summary: Converts between Gregorian dates and other calendar systems.Calendars included: Baha'i, French Republican, Hebrew, Indian Civil, Islamic, ISO, Julian, Mayan and Persian.
 
 
 

@@ -15,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
   run:
-    - python
+    - python >=3.5
     - pymeeus <=1,>=0.3.6
     - pytz >=2014.10
 

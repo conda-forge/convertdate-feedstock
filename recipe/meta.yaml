@@ -1,4 +1,4 @@
-{% set version = "2.3.2" %}
+{% set version = "2.4.0" %}
 
 package:
   name: convertdate
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/c/convertdate/convertdate-{{ version }}.tar.gz
-  sha256: 57df962a6047534f1452c390ad48e3dc5c83052ad83ad6dd78d60ae22f99214c
+  sha256: 770c6b2195544d3e451e230b3f1c9b121ed02680b877f896306a04cf6f26b48f
 
 build:
   number: 0
